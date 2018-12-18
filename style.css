@@ -1,0 +1,356 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+div{
+    box-sizing: border-box;
+}
+
+/* prvata animacija */
+
+@keyframes slide{
+    0%{
+        width: 0%;
+        animation-timing-function: ease-in;
+        opacity: 1.0;
+
+    }
+
+   
+
+    70%{
+        width: 100%;
+        animation-timing-function: ease-out;
+        opacity: 1.0;
+    }
+
+    80%{
+        width: 100%;
+        animation-timing-function: ease-out;
+        opacity: 1.0;
+    }
+
+    
+
+    100%{
+        
+        opacity: 0.0;
+    }
+}
+
+.prva-animacija{
+    background-color: red;
+    color: white;
+    
+    height: 50px;
+    width: 150px;
+    margin: 30px 10px;
+}
+
+.prva-animacija > div:nth-child(1){
+      
+    float: top;
+    height: 10%;
+}
+
+.prva-animacija > div:nth-child(2){
+      
+    float: center;
+    height: 80%;
+    text-align: center;
+    line-height: 40px;
+}
+
+.prva-animacija > div:nth-child(3){
+      
+    float: bottom;
+    height: 10%;
+}
+
+/* gornata linija animacija */
+.gorna-linija > div:nth-child(1){
+      
+    float: top;
+    height: 100%;
+    width: 100%;
+    
+
+    background-color: white;
+
+    animation-name: slide;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    
+    
+
+}
+
+.dolna-linija > div:nth-child(1){
+      
+    float: top;
+    height: 100%;
+    width: 100%;
+    
+
+    background-color: white;
+
+    animation-name: slide;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    
+    
+
+}
+
+
+/* vtora animacija  */
+
+
+@keyframes slide2{
+    0%{
+        width: 0%;
+        animation-timing-function: ease-in;
+        opacity: 1.0;
+        z-index: 100;
+
+    }
+
+   
+
+    70%{
+        width: 100%;
+        animation-timing-function: ease-out;
+        opacity: 1.0;
+        z-index: 100;
+    }
+
+    80%{
+        width: 100%;
+        animation-timing-function: ease-out;
+        opacity: 1.0;
+        z-index: 100;
+    }
+
+    
+
+    100%{
+        
+        opacity: 0.0;
+        z-index: 100;
+        animation-timing-function: ease-out;
+    }
+}
+
+
+.vtora-animacija{
+    background-color: red;
+    color: white;
+    
+    height: 50px;
+    width: 150px;
+    margin: 30px 10px;
+}
+
+.vtora-animacija > div:nth-child(1){
+      
+    float: center;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+    z-index: 50;
+}
+
+.vtora-animacija > div:nth-child(2){
+      
+    position: relative;
+    bottom: 50px;
+    
+    float: center;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+
+    background-color: white;
+
+    animation-name: slide2;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    
+
+}
+
+
+/* treta animacija  */
+
+@keyframes spin-vnatre {
+    0%{
+        float: right;
+        
+
+    }
+
+    25%{
+        float: bottom;
+        
+
+    }
+
+    50%{
+        float: left;
+        
+
+    }
+
+    75%{
+        float: top;
+       
+
+    }
+
+    100%{
+        float: right;
+        
+
+    }
+  }
+
+
+@keyframes spin-topce {
+    0%{
+        float: left;
+        
+
+    }
+
+    25%{
+        float: top;
+        
+
+    }
+
+    50%{
+        float: right;
+        
+
+    }
+
+    75%{
+        float: bottom;
+       
+
+    }
+
+    100%{
+        float: left;
+        
+
+    }
+  }
+
+
+
+
+.treta-animacija{
+    background-color: red;
+    
+    
+    height: 150px;
+    width: 150px;
+    margin: 30px 20px;
+}
+
+.treta-animacija > div:nth-child(1){
+      
+    float: center;
+    height: 100%;
+    
+    z-index: 50;
+
+    
+}
+
+/* .treta-animacija > div:nth-child(2){
+      
+    position: relative;
+    bottom: 150px;
+    
+    float: center;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+
+    background-color: white;
+
+    animation-name: slide2;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    
+
+} */
+
+/* .vnatre{
+    position: relative;
+    animation-name: spin-vnatre;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+} */
+
+.vnatre > div:nth-child(1){
+      
+    float: center;
+    height: 100%;
+    
+    z-index: 50;
+
+    
+}
+
+.vnatre > div:nth-child(2){
+      
+    position: relative;
+    bottom: 150px;
+    
+    float: center;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+
+    background-color: white;
+
+    animation-name: slide2;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    
+
+}
+
+.topce{
+    background-color: green;
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+
+    position: relative;
+
+    animation-name: spin-topce;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+.topce::before{
+    
+
+    position: absolute;
+
+    top: -100px;
+    left: 0px;
+}
